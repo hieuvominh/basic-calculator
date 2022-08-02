@@ -158,6 +158,7 @@ export default function Calculator() {
       {config.map((e) => {
         return (
           <button
+            key={e.key}
             onClick={() => onHandleClick(e.key)}
             className={
               'button ' +
